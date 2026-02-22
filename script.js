@@ -40,6 +40,16 @@ socialBtns.forEach(btn => {
         
         // Проверяем, не является ли кнопка неактивной
         if (btn.classList.contains('disabled')) {
+            // Показываем уведомление для неактивной кнопки
+            document.querySelector('.modal-icon').className = 'modal-icon ' + btn.querySelector('i').className;
+            document.querySelector('.modal-title').textContent = btn.getAttribute('data-name');
+            document.querySelector('.modal-text').textContent = btn.getAttribute('data-desc');
+            
+            // Скрываем кнопку "Перейти"
+            confirmBtn.style.display = 'none';
+            cancelBtn.textContent = 'Понятно';
+            
+            modal.classList.add('active');
             return;
         }
         
@@ -51,6 +61,10 @@ socialBtns.forEach(btn => {
         document.querySelector('.modal-icon').className = 'modal-icon ' + currentIcon;
         document.querySelector('.modal-title').textContent = currentTitle;
         document.querySelector('.modal-text').textContent = btn.getAttribute('data-desc');
+        
+        // Показываем кнопку "Перейти"
+        confirmBtn.style.display = 'inline-block';
+        cancelBtn.textContent = 'Отмена';
         
         // Показываем модальное окно
         modal.classList.add('active');
