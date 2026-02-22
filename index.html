@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konstanta - Streamer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <img src="photo_2025-11-07_20-24-21.jpg" alt="konstanta" class="avatar">
+            <h1 class="username">konstanta</h1>
+        </div>
+
+        <div class="about-section">
+            <button class="about-toggle" id="aboutToggle">
+                <span>Обо мне</span>
+                <i class="fas fa-chevron-down arrow"></i>
+            </button>
+            <div class="about-content" id="aboutContent">
+                <p>Привет! Я konstanta - стример, который создает контент для вас. Подписывайтесь на мои социальные сети, чтобы не пропустить стримы!</p>
+            </div>
+        </div>
+
+        <div class="buttons-container" id="buttonsContainer">
+            <a href="https://www.donationalerts.com/r/konst4nta" target="_blank" class="social-btn" data-name="Донат" data-desc="Поддержи стримера рублём! 💰">
+                <i class="fas fa-donate"></i>
+                <span>Донат</span>
+            </a>
+            
+            <a href="https://www.twitch.tv/konst4nta" target="_blank" class="social-btn" data-name="Twitch" data-desc="Смотри стримы в прямом эфире! 🎮">
+                <i class="fab fa-twitch"></i>
+                <span>Twitch</span>
+            </a>
+            
+            <a href="https://www.youtube.com/@konstantaYT" target="_blank" class="social-btn" data-name="YouTube" data-desc="Лучшие моменты и нарезки! 🎬">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+            
+            <a href="https://www.instagram.com/konstanta.twitch/" target="_blank" class="social-btn" data-name="Instagram" data-desc="Закулисье и фоточки! 📸">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            
+            <a href="https://www.tiktok.com/@konst4nta0" target="_blank" class="social-btn" data-name="TikTok" data-desc="Короткие приколы и мемы! 🔥">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+            
+            <a href="https://t.me/konstantaYT" target="_blank" class="social-btn" data-name="YouTube Telegram" data-desc="Новости и анонсы стримов! 📢">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
+            
+            <a href="https://vk.com/id589535750" target="_blank" class="social-btn" data-name="VK" data-desc="Общайся в родной соцсети! 💬">
+                <i class="fab fa-vk"></i>
+                <span>VK</span>
+            </a>
+            
+            <a href="https://t.me/Konst4nta" target="_blank" class="social-btn" data-name="Связаться" data-desc="Напиши мне напрямую! ✉️">
+                <i class="fas fa-envelope"></i>
+                <span>Связаться со мной</span>
+            </a>
+        </div>
+
+        <footer class="footer">
+            <p>Made with love by santa2555555</p>
+        </footer>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <i class="modal-icon"></i>
+            <h2 class="modal-title"></h2>
+            <p class="modal-text">Переход на внешний сайт</p>
+            <div class="modal-buttons">
+                <button class="modal-confirm" id="confirmBtn">Перейти</button>
+                <button class="modal-cancel" id="cancelBtn">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
