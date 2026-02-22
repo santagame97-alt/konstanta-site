@@ -38,6 +38,11 @@ socialBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
         
+        // Проверяем, не является ли кнопка неактивной
+        if (btn.classList.contains('disabled')) {
+            return;
+        }
+        
         currentLink = btn.getAttribute('href');
         currentTitle = btn.getAttribute('data-name');
         currentIcon = btn.querySelector('i').className;

@@ -244,6 +244,19 @@ body {
     box-shadow: 0 8px 25px rgba(0, 136, 204, 0.6);
 }
 
+/* Неактивная кнопка */
+.social-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    background: rgba(60, 60, 80, 0.3);
+}
+
+.social-btn.disabled:hover {
+    transform: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 .social-btn i {
     font-size: 1.3em;
 }
@@ -261,6 +274,33 @@ body {
     font-weight: 500;
     letter-spacing: 0.5px;
     text-shadow: 0 0 10px rgba(145, 70, 255, 0.5);
+}
+
+.footer-link {
+    color: #9146ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-link:hover {
+    color: #b46fff;
+    text-shadow: 0 0 15px rgba(145, 70, 255, 0.8);
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: #9146ff;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
 }
 
 @keyframes fadeInUp {
