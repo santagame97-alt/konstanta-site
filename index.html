@@ -8,9 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="warning-banner" id="warningBanner">
+        <div class="warning-content">
+            <i class="fas fa-exclamation-triangle warning-icon"></i>
+            <p class="warning-text">
+                <strong>Внимание!</strong> Автор может изменить ссылки в любое время. Некоторые кнопки могут не работать.
+            </p>
+            <button class="warning-close" id="warningClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="profile-section">
-            <img src="photo_2025-11-07_20-24-21.jpg" alt="konstanta" class="avatar">
+            <img src="photo_2025-11-07_20-24-21.jpg" alt="konstanta" class="avatar" draggable="false" oncontextmenu="return false;">
             <h1 class="username">konstanta</h1>
         </div>
 
@@ -67,7 +79,7 @@
         </div>
 
         <footer class="footer">
-            <p>Made with love by <a href="https://social-links-xi-hazel.vercel.app/" target="_blank" class="footer-link">santa2555555</a></p>
+            <p>Made with love by <a href="https://social-links-xi-hazel.vercel.app/" target="_blank" class="footer-link"></a>santa2555555</a></p>
         </footer>
     </div>
 

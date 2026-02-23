@@ -8,10 +8,21 @@ const closeBtn = document.getElementById('closeBtn');
 const confirmBtn = document.getElementById('confirmBtn');
 const cancelBtn = document.getElementById('cancelBtn');
 const socialBtns = document.querySelectorAll('.social-btn');
+const warningBanner = document.getElementById('warningBanner');
+const warningClose = document.getElementById('warningClose');
 
 let currentLink = '';
 let currentIcon = '';
 let currentTitle = '';
+
+// Закрытие предупреждающей плашки
+warningClose.addEventListener('click', () => {
+    warningBanner.classList.add('hidden');
+    setTimeout(() => {
+        warningBanner.style.display = 'none';
+        document.body.style.paddingTop = '20px';
+    }, 300);
+});
 
 // Переключение "Обо мне"
 aboutToggle.addEventListener('click', () => {
