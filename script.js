@@ -1,8 +1,11 @@
 // Элементы
 const aboutToggle = document.getElementById('aboutToggle');
 const aboutContent = document.getElementById('aboutContent');
+const setupToggle = document.getElementById('setupToggle');
+const setupContent = document.getElementById('setupContent');
 const buttonsContainer = document.getElementById('buttonsContainer');
 const arrow = document.querySelector('.arrow');
+const arrowSetup = document.querySelector('.arrow-setup');
 const modal = document.getElementById('modal');
 const closeBtn = document.getElementById('closeBtn');
 const confirmBtn = document.getElementById('confirmBtn');
@@ -40,6 +43,26 @@ aboutToggle.addEventListener('click', () => {
         // Открываем "Обо мне" и скрываем кнопки
         aboutContent.classList.add('active');
         arrow.classList.add('rotated');
+        buttonsContainer.classList.add('hidden');
+    }
+});
+
+// Переключение "Мой сетап"
+setupToggle.addEventListener('click', () => {
+    const isActive = setupContent.classList.contains('active');
+    
+    if (isActive) {
+        // Закрываем "Мой сетап" и показываем кнопки
+        setupContent.classList.remove('active');
+        arrowSetup.classList.remove('rotated');
+        
+        setTimeout(() => {
+            buttonsContainer.classList.remove('hidden');
+        }, 300);
+    } else {
+        // Открываем "Мой сетап" и скрываем кнопки
+        setupContent.classList.add('active');
+        arrowSetup.classList.add('rotated');
         buttonsContainer.classList.add('hidden');
     }
 });
