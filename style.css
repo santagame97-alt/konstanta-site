@@ -326,6 +326,8 @@ body {
 .social-btn:nth-child(6) { animation-delay: 0.35s; }
 .social-btn:nth-child(7) { animation-delay: 0.4s; }
 .social-btn:nth-child(8) { animation-delay: 0.45s; }
+.social-btn:nth-child(9) { animation-delay: 0.5s; }
+.social-btn:nth-child(10) { animation-delay: 0.55s; }
 
 @keyframes slideIn {
     from {
@@ -400,6 +402,22 @@ body {
     border-color: #0088cc;
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 8px 25px rgba(0, 136, 204, 0.6);
+}
+
+/* Discord */
+.social-btn:nth-child(9):hover {
+    background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%);
+    border-color: #5865f2;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(88, 101, 242, 0.6);
+}
+
+/* Steam */
+.social-btn:nth-child(10):hover {
+    background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+    border-color: #8b5cf6;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
 }
 
 /* Неактивная кнопка */
@@ -555,6 +573,7 @@ body {
 .modal-text {
     color: #b0b0b0;
     margin-bottom: 25px;
+    white-space: pre-line;
 }
 
 .modal-buttons {
