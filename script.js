@@ -72,9 +72,9 @@ socialBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
         
-        // Проверяем, не является ли кнопка неактивной
-        if (btn.classList.contains('disabled')) {
-            // Показываем уведомление для неактивной кнопки
+        // Проверяем, не является ли кнопка неактивной или это кнопка "Мой сетап"
+        if (btn.classList.contains('disabled') || btn.getAttribute('data-name') === 'Мой сетап') {
+            // Показываем уведомление для неактивной кнопки или сетапа
             document.querySelector('.modal-icon').className = 'modal-icon ' + btn.querySelector('i').className;
             document.querySelector('.modal-title').textContent = btn.getAttribute('data-name');
             document.querySelector('.modal-text').textContent = btn.getAttribute('data-desc');
